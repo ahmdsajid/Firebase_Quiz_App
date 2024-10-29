@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "850669297444",
+    "project_id": "epic-quiz-app",
+    "storage_bucket": "epic-quiz-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850669297444:android:beb22d4c6069b034daddb1",
+        "android_client_info": {
+          "package_name": "com.example.firebase_quiz_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq9zn6z8YCGN8VQdElzduz-rvjOGXPOtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
