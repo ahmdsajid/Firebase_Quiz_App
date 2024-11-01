@@ -1,7 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_quiz_app/Admin/Add_Quiz.dart';
-import 'package:firebase_quiz_app/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -88,6 +86,7 @@ class _AdminLoginState extends State<AdminLogin> {
                                   if (value == null || value.isEmpty) {
                                     return 'Please Enter Username';
                                   }
+                                  return null;
                                 },
                                 decoration: InputDecoration(
                                     border: InputBorder.none,
@@ -120,6 +119,7 @@ class _AdminLoginState extends State<AdminLogin> {
                                   if (value == null || value.isEmpty) {
                                     return 'Please Enter Password';
                                   }
+                                  return null;
                                 },
                                 decoration: InputDecoration(
                                     border: InputBorder.none,
