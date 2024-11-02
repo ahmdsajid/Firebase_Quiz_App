@@ -2,6 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_quiz_app/Admin/Add_Quiz.dart';
 import 'package:firebase_quiz_app/Admin/Admin_login.dart';
 import 'package:firebase_quiz_app/firebase_options.dart';
+import 'package:firebase_quiz_app/pages/Home.dart';
+import 'package:firebase_quiz_app/pages/Question.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -37,7 +39,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: AddQuiz(),
+      child: MyHome(),
     );
   }
 }
