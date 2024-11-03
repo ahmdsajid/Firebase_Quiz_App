@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:firebase_quiz_app/Admin/Database.dart';
+import 'package:firebase_quiz_app/Service/Database.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -46,7 +46,12 @@ class _AddQuizState extends State<AddQuiz> {
       };
 
       await Database().AddQuiz(AddQuiz, value!).then((value) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Successfully Added", style: TextStyle(),)));
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+            backgroundColor: Colors.orangeAccent,
+            content: Text(
+              "Successfully Added",
+              style: TextStyle(fontSize: 18.0),
+            )));
       });
     }
   }
@@ -167,9 +172,10 @@ class _AddQuizState extends State<AddQuiz> {
               Text(
                 "Option 1",
                 style: TextStyle(
-                    color: Colors.black87,
-                    fontSize: 20.0.sp,
-                    fontWeight: FontWeight.bold),
+                  color: Colors.black87,
+                  fontSize: 20.0.sp,
+                  // fontWeight: FontWeight.bold
+                ),
               ),
               SizedBox(
                 height: 20.0.h,
@@ -203,9 +209,10 @@ class _AddQuizState extends State<AddQuiz> {
               Text(
                 "Option 2",
                 style: TextStyle(
-                    color: Colors.black87,
-                    fontSize: 20.0.sp,
-                    fontWeight: FontWeight.bold),
+                  color: Colors.black87,
+                  fontSize: 20.0.sp,
+                  //fontWeight: FontWeight.bold
+                ),
               ),
               SizedBox(
                 height: 20.0.h,
@@ -239,9 +246,10 @@ class _AddQuizState extends State<AddQuiz> {
               Text(
                 "Option 3",
                 style: TextStyle(
-                    color: Colors.black87,
-                    fontSize: 20.0.sp,
-                    fontWeight: FontWeight.bold),
+                  color: Colors.black87,
+                  fontSize: 20.0.sp,
+                  //fontWeight: FontWeight.bold
+                ),
               ),
               SizedBox(
                 height: 20.0.h,
@@ -275,9 +283,10 @@ class _AddQuizState extends State<AddQuiz> {
               Text(
                 "Option 4",
                 style: TextStyle(
-                    color: Colors.black87,
-                    fontSize: 20.0.sp,
-                    fontWeight: FontWeight.bold),
+                  color: Colors.black87,
+                  fontSize: 20.0.sp,
+                  //fontWeight: FontWeight.bold
+                ),
               ),
               SizedBox(
                 height: 20.0.h,
@@ -311,9 +320,10 @@ class _AddQuizState extends State<AddQuiz> {
               Text(
                 "Correct Answer",
                 style: TextStyle(
-                    color: Colors.black87,
-                    fontSize: 20.0.sp,
-                    fontWeight: FontWeight.bold),
+                  color: Colors.black87,
+                  fontSize: 20.0.sp,
+                  //fontWeight: FontWeight.bold
+                ),
               ),
               SizedBox(
                 height: 20.0.h,
@@ -368,7 +378,10 @@ class _AddQuizState extends State<AddQuiz> {
                         this.value = value;
                       })),
                   dropdownColor: Colors.white,
-                  hint: Text("Select Category"),
+                  hint: Text(
+                    "Select Category",
+                    style: TextStyle(fontWeight: FontWeight.w700,fontSize: 20.0.sp),
+                  ),
                   iconSize: 36,
                   icon: Icon(
                     Icons.arrow_drop_down,
