@@ -1,8 +1,8 @@
 //import 'package:firebase_quiz_app/main.dart';
-import 'dart:ffi';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_quiz_app/Service/Database.dart';
+import 'package:firebase_quiz_app/pages/Home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -261,14 +261,22 @@ Widget AllQuiz(){
               padding: EdgeInsets.only(top: 50.0, left: 20.0),
               child: Row(
                 children: [
-                  Container(
-                    padding: EdgeInsets.all(6),
-                    decoration: BoxDecoration(
-                        color: Color(0xFFf35b32),
-                        borderRadius: BorderRadius.circular(60.r)),
-                    child: Icon(
-                      Icons.arrow_back,
-                      color: Colors.white,
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        Navigator.pop(context);
+                        //Navigator.push(context, MaterialPageRoute(builder: (context)=> MyHome()));
+                      });
+                    },
+                    child: Container(
+                      padding: EdgeInsets.all(6),
+                      decoration: BoxDecoration(
+                          color: Color(0xFFf35b32),
+                          borderRadius: BorderRadius.circular(60.r)),
+                      child: Icon(
+                        Icons.arrow_back,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                   SizedBox(
