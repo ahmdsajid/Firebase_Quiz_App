@@ -1,5 +1,4 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_quiz_app/Admin/Admin_login.dart';
 import 'package:firebase_quiz_app/firebase_options.dart';
 import 'package:firebase_quiz_app/pages/Home.dart';
 import 'package:flutter/material.dart';
