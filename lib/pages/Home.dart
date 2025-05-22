@@ -53,7 +53,7 @@ class _MyHomeState extends State<MyHome> {
                                 fontSize: 22,
                                 fontWeight: FontWeight.bold),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
